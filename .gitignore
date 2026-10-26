@@ -1,0 +1,39 @@
+
+# ==========================================
+# NIFTY 50 Implied Volatility Analysis
+# ==========================================
+
+# 1. Python virtual environment
+.venv/
+venv/
+env/
+
+# 2. Python cache and compiled files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# 3. Raw NSE option-chain data
+data/*.csv
+
+# 4. Automatically generated analysis outputs
+/plots_mid/
+/plots_ltp/
+
+# 5. Personal theory handbook and editable reports
+# Ignore PDF and Word files in project root only
+/*.pdf
+/*.docx
+
+# 6. Local environment and configuration
+.env
+.env.*
+.vscode/
+.idea/
+
+# 7. Temporary and system files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
