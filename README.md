@@ -109,7 +109,6 @@ Outputs include individual IV-by-strike charts, combined smile charts, ATM-strik
 ## How reliable are the results?
 
 - The analysis uses **calls only**; market interpretation would benefit from OTM put quotes and put–call parity checks.
-- Download happened at **15:40 IST**, while code assumes **15:30 IST**. Exported quotes do not guarantee synchronized update times.
 - One constant interest-rate and dividend-yield proxy is used across expiries.
 - Quote screens remove obvious issues but cannot certify liquidity, quote freshness, or absence of arbitrage.
 - March and June 2027 have only **three accepted strikes each** in the ±12% window; connecting those points is for visualization, not calibrated smile estimation.
@@ -125,7 +124,8 @@ Outputs include individual IV-by-strike charts, combined smile charts, ATM-strik
 
 ## Data source and references
 
-- [NSE India — Option Chain](https://www.nseindia.com/option-chain) (original expiry-specific CSV downloads, collected 26 October 2026).
+- [NSE India — Option Chain](https://www.nseindia.com/option-chain) (original expiry-specific CSV downloads, collected 26 October 2026, also finding the Dividend Yield).
+- [Financial Benchmarks India Pvt. ltd MIBOR rate](https://www.fbil.org.in/#/home) (For Term MIBOR rate, collected 19 October 2026 data)
 - Black, F. & Scholes, M. (1973), *The Pricing of Options and Corporate Liabilities*.
 - Merton, R. C. (1973), *Theory of Rational Option Pricing*.
 - Hull, J. C., *Options, Futures, and Other Derivatives*, 11th ed.
